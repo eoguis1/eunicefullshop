@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eunice FullShop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="Imagenes/Logo.png" alt="Eunice FullShop" class="logo">
+        <h1 class="titulo">Eunice FullShop</h1>
+    </div>
+
+    <nav>
+        <button onclick="mostrarSeccion('tienda')">Tienda</button>
+        <button onclick="mostrarSeccion('carrito')">Carrito</button>
+        <button onclick="mostrarSeccion('login')">Administrador</button>
+    </nav>
+</header>
+
+
+<!-- TIENDA -->
+<section id="tienda" class="seccion">
+    <h2>Productos</h2>
+    <div id="lista-productos" class="grid"></div>
+</section>
+
+<!-- CARRITO -->
+<section id="carrito" class="seccion oculto">
+    <h2>Carrito de Compras</h2>
+    <div id="carrito-items"></div>
+    <p id="total"></p>
+    <button onclick="enviarWhatsApp()" class="btn-whatsapp">Comprar por WhatsApp</button>
+
+</section>
+
+<!-- LOGIN ADMIN -->
+<section id="login" class="seccion oculto">
+    <h2>Acceso Administrador</h2>
+    <input id="user" placeholder="Usuario">
+    <input id="pass" type="password" placeholder="Contraseña">
+    <button onclick="login()">Entrar</button>
+    <p id="login-msg"></p>
+</section>
+
+<!-- PANEL ADMIN -->
+<section id="admin" class="seccion oculto">
+    <h2>Panel de Gestión</h2>
+    <button onclick="mostrarFormularioAgregar()">Agregar Producto</button>
+    <button onclick="mostrarSeccion('cambiar-datos')">Cambiar Usuario / Contraseña</button>
+
+    <div id="lista-admin" class="grid-admin"></div>
+</section>
+
+<!-- FORMULARIO AGREGAR PRODUCTO -->
+<section id="form-agregar" class="seccion oculto">
+    <h2>Agregar Producto</h2>
+    <input id="nombreNuevo" placeholder="Nombre">
+    <input id="precioNuevo" type="number" placeholder="Precio">
+    <input id="imgNuevo" placeholder="Ruta de Imagen (ej: imagenes/producto51.jpg)">
+    <button onclick="agregarProducto()">Guardar</button>
+    <button onclick="mostrarSeccion('admin')">Cancelar</button>
+</section>
+
+<!-- CAMBIAR DATOS -->
+<section id="cambiar-datos" class="seccion oculto">
+    <h2>Cambiar Usuario y Contraseña</h2>
+    <input id="nuevoUser" placeholder="Nuevo Usuario">
+    <input id="nuevoPass" placeholder="Nueva Contraseña">
+    <button onclick="cambiarDatos()">Guardar Cambios</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
