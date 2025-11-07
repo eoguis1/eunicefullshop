@@ -5,8 +5,8 @@ let adminPass = "1234";
 // LISTA DE PRODUCTOS (50)
 let productos = [
 {nombre:"Blusa Elegante", precio:450, img:"Imagenes/producto1.png"},
-{nombre:"Vestido Casual", precio:850, img:"imagenes/producto2.jpg"},
-{nombre:"Zapatos Tacón", precio:1200, img:"imagenes/producto3.jpg"},
+{nombre:"Vestido Casual", precio:850, img:"imagenes/producto2.png"},
+{nombre:"Zapatos Tacón", precio:1200, img:"imagenes/producto3.png"},
 {nombre:"Cartera Fashion", precio:950, img:"imagenes/producto4.jpg"},
 {nombre:"Aretes Dorados", precio:150, img:"imagenes/producto5.jpg"},
 {nombre:"Collar de Lujo", precio:380, img:"imagenes/producto6.jpg"},
@@ -158,3 +158,4 @@ function enviarWhatsApp() {
     let url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensaje);
     window.open(url, "_blank");
 }
+
