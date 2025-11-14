@@ -70,6 +70,26 @@ nav button:hover {
     box-shadow:0 0 5px rgba(0,0,0,0.15);
 }
 
+.mensaje-carrito {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #4caf50;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+    font-size: 16px;
+    animation: fadein 0.3s;
+    z-index: 9999;
+}
+
+@keyframes fadein {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
 /* IMAGEN DE PRODUCTO (AQUÍ MODIFICAS EL TAMAÑO) */
 .producto img {
     width:200px;
@@ -126,3 +146,4 @@ input {
 .btn-whatsapp:hover {
     background: #1ea955;
 }
+
