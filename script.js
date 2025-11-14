@@ -9,7 +9,7 @@ let productos = [
 {nombre:"Zapatos Tacón", precio:1200, img:"Imagenes/producto3.png"},
 {nombre:"Cartera Fashion", precio:950, img:"Imagenes/producto4.png"},
 {nombre:"Aretes Dorados", precio:150, img:"Imagenes/producto5.png"},
-{nombre:"Collar de Lujo", precio:380, img:"imagenes/producto6.jpg"},
+{nombre:"Collar de Lujo", precio:380, img:"Imagenes/producto6.jpg"},
 {nombre:"Pijama Suave", precio:550, img:"imagenes/producto7.jpg"},
 {nombre:"Reloj Femenino", precio:1750, img:"imagenes/producto8.jpg"},
 {nombre:"Sandalias Verano", precio:600, img:"imagenes/producto9.jpg"},
@@ -179,6 +179,7 @@ function enviarWhatsApp() {
     let url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensaje);
     window.open(url, "_blank");
 }
+
 
 
 
