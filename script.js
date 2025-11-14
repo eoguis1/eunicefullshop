@@ -75,6 +75,27 @@ function cargarProductos(){
     });
     document.getElementById("lista-productos").innerHTML=html;
 }
+// 👉 Nueva función para mostrar el mensaje
+function mostrarMensaje(texto) {
+    const msg = document.createElement("div");
+    msg.className = "mensaje-carrito";
+    msg.textContent = texto;
+
+    document.body.appendChild(msg);
+
+    // Desaparece a los 2 segundos
+    setTimeout(() => {
+        msg.remove();
+    }, 2000);
+}
+
+// 👉 Modifica tu función agregarCarrito para que muestre el mensaje
+function agregarCarrito(i) {
+    // Aquí va tu lógica actual para agregar al carrito...
+
+    mostrarMensaje("Producto agregado al carrito ✔️");
+}
+
 cargarProductos();
 
 function agregarCarrito(i){
@@ -158,4 +179,5 @@ function enviarWhatsApp() {
     let url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensaje);
     window.open(url, "_blank");
 }
+
 
