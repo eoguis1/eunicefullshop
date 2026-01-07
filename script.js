@@ -165,7 +165,7 @@ function enviarWhatsApp() {
     }
 
     // Cambia este número a tu WhatsApp
-    let numero = "8294648473";
+    let numero = "8296036611";
 
 let mensaje = "¡Hola! Me gustaría comprar estos productos:\n\n";
 
@@ -179,6 +179,7 @@ let mensaje = "¡Hola! Me gustaría comprar estos productos:\n\n";
     let url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensaje);
     window.open(url, "_blank");
 }
+
 
 
 
